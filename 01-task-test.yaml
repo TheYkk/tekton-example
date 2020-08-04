@@ -11,5 +11,5 @@ spec:
     - name: run-test
       image: golang:1.14-alpine
       workingDir: /workspace/repo
-      command: ["go"]
-      args: ["test"]
+      command: ["bash"]
+      args: ["-c", "./ci/test"]

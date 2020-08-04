@@ -14,6 +14,7 @@ spec:
         - name: DOCKER_CONFIG
           value: /tekton/home/.docker
       command:
+        - ./ci/version
         - /kaniko/executor
         - --dockerfile=Dockerfile
         - --context=/workspace/repo
