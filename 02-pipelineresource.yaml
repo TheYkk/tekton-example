@@ -1,0 +1,11 @@
+apiVersion: tekton.dev/v1alpha1
+kind: PipelineResource
+metadata:
+  name: theykk-tekton-example
+spec:
+  type: git
+  params:
+    - name: url
+      value: https://github.com/theykk/tekton-example
+    - name: revision
+      value: master
